@@ -8,43 +8,68 @@
 	    <style>
 	    	#section1 {padding-top:50px;height:400px;color: #fff; background-color: #80a8ff;}
 	    	#section2 {padding-top:50px;height:400px;color: #fff; background-color: #53c68c;}
-	    	#section3 {padding-top:50px;height:400px;color: #fff; background-color: #ffa64d;}
-	    	.footer{ width: 100%;height: 60px;line-height: 60px;background-color: #f5f5f5;
+	    	#section3 {padding-top:50px;height:400px; 
+	    	/*color: #fff; background-color: #8a6d3b;*/
+	    }
+	    	.footer{ width: 100%; padding:50px 0;
+	    		background-color: #2f2f2f;
 	    			}
 
 	    </style>
 	  </head>
 	  <!-- collapsing navigation bar on a small screen-->
 	<body data-spy="scroll" data-target=".navbar" data-offset="50">
-		<nav  class="nav navbar-inverse">
-		<div class="container-fluid">
-		<div class="navbar-header">
-		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-			<span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span> 
-		</button>
-		
-		<a class="navbar-brand" href="#">My Website</a>
-		</div>
-		<div class="collapse navbar-collapse" id="myNavbar">
-			<ul class="nav navbar-nav">
-			<li class="active"><a href="#">Home</a></li>
-			<li><a href="#section1">Portfolio</a></li>
-			<li><a href="#section2">About</a></li>
-			<li><a href="#section3">Contact</a></li>
-			</ul>
-		</div>
 
-		</div>
-	</nav>
-
-	<div id="section1" class="container-fluid text-center">
-	  <h1>My Portfolio</h1>
-	  <p>I am a Dot Net developer having 6 years of experience. i am currently working with a Reputed MNC.</p>
-	 
-	</div>
-
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Portfolio</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#section2">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#section3">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+	
+ <div class="jumbotron">
+  <div class="container text-center">
+    <h1>My Portfolio</h1>      
+    <p>I am a Dot Net developer having 6 years of experience. i am currently working with a Reputed MNC.</p>
+  </div>
+</div>
+<!-- Image section -->
+<div class="container-fluid bg-3 text-center" id="gallery">    
+  <h2 class="margin">My gallery</h2><br>
+  <div class="row">
+  
+    <div class="col-sm-4">
+      <p>This is a wonderful nature pic clicked by me.this is a responsive image rendered differently in differenty devices.</p>
+      <img src="http://th03.deviantart.net/fs70/200H/f/2010/256/0/9/painting_of_nature_by_dhikagraph-d2ynalq.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>This is a wonderful nature pic clicked by me.this is a responsive image rendered differently in differenty devices.</p>
+      <img src="http://2.bp.blogspot.com/-H6MAoWN-UIE/TuRwLbHRSWI/AAAAAAAABBk/89iiEulVsyg/s400/Free%2BNature%2BPhoto.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>This is a wonderful nature pic clicked by me.this is a responsive image rendered differently in differenty devices.</p>
+      <img src="http://2.bp.blogspot.com/-H6MAoWN-UIE/TuRwLbHRSWI/AAAAAAAABBk/89iiEulVsyg/s400/Free%2BNature%2BPhoto.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div>
+<!-- End Image section -->
 	<div id="section2" class="container-fluid text-center">
 	  <h1>About Me</h1>
 	  <p>Hello My name is <strong>Neeraj Lohumi.</strong></p>
@@ -52,27 +77,40 @@
 	   <p>here i have tried working with Responsive web using Bootstrap.just try to resize the browser window to see the menu effect.</p>
 	</div>
 	<div id="section3" class="container-fluid  text-center">
-	  <h1>Contact Me</h1>
-	  <p>i am reachable at +91 9716850055 or just leave me a message at neerajlohumi@gmail.com</p>
-	  
+	  <h3>Contact Me</h3>
+	  <!-- <p>i am reachable at +91 9716850055 or just leave me a message at neerajlohumi@gmail.com</p> -->
+	  <div class="row">
+	  	<div class="col-md-4">
+      <p>Drop a message.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Gurgaon, India</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: +91 34333</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@test.com</p>
+    </div>
+    <div class="col-md-8">
+    <div class="row">
+    	 <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+        	<input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+    </div>
+    <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+    <br>
+    <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" type="submit">Send</button>
+        </div>
+    </div>
+
 	</div>
-	<!--
-	<div class="container-fluid">
-		<h1>My Portfolio</h1>
-		<div class="row">
-			<div class="col-sm-4 bg-success" >Neeraj Lohumi</div>
-			<div class="col-sm-8">.col-sm-8</div>
-		</div>
+	</div>
+	
 
-	</div> -->
-
-	<footer class="footer">
-		<div class="container text-center">
+	<footer class="container-fluid text-center footer">
 		<span class="text-muted ">
 			this is a simple bootstrap footer
 		</span>
-		</div>
-
 	</footer>
 
 	</body>
